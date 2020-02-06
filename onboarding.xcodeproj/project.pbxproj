@@ -13,6 +13,10 @@
 		049DCC6423EBD35B00408778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DCC6223EBD35B00408778 /* Main.storyboard */; };
 		049DCC6623EBD37900408778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049DCC6523EBD37900408778 /* Assets.xcassets */; };
 		049DCC6923EBD37A00408778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DCC6723EBD37A00408778 /* LaunchScreen.storyboard */; };
+		049DCC7123EBD43500408778 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DCC7023EBD43500408778 /* Onboarding.storyboard */; };
+		049DCC7323EBDAAE00408778 /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DCC7223EBDAAE00408778 /* OnboardingContentViewController.swift */; };
+		049DCC7523EBDC8E00408778 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DCC7423EBDC8E00408778 /* OnboardingPageViewController.swift */; };
+		049DCC7723EBE39300408778 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DCC7623EBE39300408778 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		049DCC6523EBD37900408778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049DCC6823EBD37A00408778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049DCC6A23EBD37A00408778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049DCC7023EBD43500408778 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		049DCC7223EBDAAE00408778 /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
+		049DCC7423EBDC8E00408778 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		049DCC7623EBE39300408778 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +68,13 @@
 				049DCC5E23EBD35B00408778 /* SceneDelegate.swift */,
 				049DCC6023EBD35B00408778 /* ViewController.swift */,
 				049DCC6223EBD35B00408778 /* Main.storyboard */,
+				049DCC7023EBD43500408778 /* Onboarding.storyboard */,
 				049DCC6523EBD37900408778 /* Assets.xcassets */,
 				049DCC6723EBD37A00408778 /* LaunchScreen.storyboard */,
 				049DCC6A23EBD37A00408778 /* Info.plist */,
+				049DCC7223EBDAAE00408778 /* OnboardingContentViewController.swift */,
+				049DCC7423EBDC8E00408778 /* OnboardingPageViewController.swift */,
+				049DCC7623EBE39300408778 /* OnboardingViewController.swift */,
 			);
 			path = onboarding;
 			sourceTree = "<group>";
@@ -128,6 +140,7 @@
 				049DCC6923EBD37A00408778 /* LaunchScreen.storyboard in Resources */,
 				049DCC6623EBD37900408778 /* Assets.xcassets in Resources */,
 				049DCC6423EBD35B00408778 /* Main.storyboard in Resources */,
+				049DCC7123EBD43500408778 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				049DCC6123EBD35B00408778 /* ViewController.swift in Sources */,
+				049DCC7723EBE39300408778 /* OnboardingViewController.swift in Sources */,
+				049DCC7323EBDAAE00408778 /* OnboardingContentViewController.swift in Sources */,
+				049DCC7523EBDC8E00408778 /* OnboardingPageViewController.swift in Sources */,
 				049DCC5D23EBD35B00408778 /* AppDelegate.swift in Sources */,
 				049DCC5F23EBD35B00408778 /* SceneDelegate.swift in Sources */,
 			);
@@ -294,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shamrat.onboarding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shamrat.onboarding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
